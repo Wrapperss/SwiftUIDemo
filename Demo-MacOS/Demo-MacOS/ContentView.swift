@@ -10,8 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            Text("Hello World")
+        VStack(alignment: HorizontalAlignment.trailing,
+               spacing: 10) {
+            List {
+                Text("Hello List").font(Font.system(size: 20))
+            }
+            Text("Hello Text")
         }
         .font(Font.system(size: 30))
         .foregroundColor(Color.green)
